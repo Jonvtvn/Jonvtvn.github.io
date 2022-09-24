@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="container"></div>
-            <section>
+            <section id="animation">
                 <div class="text">
                     <h2 style="--i:0.5"><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span>
                         <span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span></h2>
@@ -43,19 +43,36 @@
                     <h2 style="--i:3"><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span>
                         <span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span><span> <  > Hola Mundo < / > </span></h2>  
                 </div>
-                
             </section>
-            <div class="toggle" onclick="toggleMenu();"></div>
 
+            <section class="banner" id="home">
+                <div class="contenidoImg">
+                    <img src="img/img1.jpg">
+                </div>
+                <div class="contenidoText">   
+                    <h5 class="textMyPortfolio">My_Portfolio</h5>
+                    <div>
+                        <h4><span>HELLO</span>, I'm</h4>
+                        <h2>JONATAN PIZARRO</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Eaque repellat voluptates numquam corrupti quam aperiam ullam 
+                            eum nulla, beatae, facere, voluptatum officia aliquam? Commodi 
+                            deserunt quisquam dolorem minima aut adipisci.numquam corrupti quam aperiam ullam 
+                            eum nulla, beatae, facere, voluptatum officia aliquam?</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="toggle" onclick="toggleMenu();"></div>
             <div class="sidebar">
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#animation">Animation</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Works</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-        </div>
     </body>
 
     <script>
