@@ -9,6 +9,11 @@
 
 
 /*--------------------------------------------animacion de texto*/
+
+.container{
+    background: rgb(19, 19, 19);
+}
+
 section{
     position: relative;
     width: 100%;
@@ -126,19 +131,125 @@ p{
 }
 
 
+.cartas{
+    justify-content: space-between;
+    height: 100vh;
+    background: rgb(19, 19, 19);
+    display:flex;
+    position: relative;
+    flex-wrap:wrap;
+    padding: 15em;
+    align-items: center;
+}
+
+.cartas .card{
+    top: 14em;
+    height: 250px;
+    position: relative;
+    background: #fff;
+    display: flex;
+    width: 28%;
+}
+
+.cartas .card .imgBx{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
 
 
+.cartas .card:hover .imgBx{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #ff0057
+}
 
+.cartas .card .imgBx:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.04);
+    font-weight: bold;
+}
 
+.cartas .card .imgBx img{
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+}
+.cartas .card:hover .imgBx img{
+    max-width: 75px;
+}
 
+.cartas .card .content{
+    position:absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.cartas .card .content h3{
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.cartas .card .content a{
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
 
-
-
-
-
-
-
+@media(max-width: 1536px){
+    .cartas .card .imgBx:before{
+        font-size: 2.5em;
+    }
+    .cartas .card{
+        height: 220px;
+        width: 31%;
+    }
+}
+@media(max-width: 1320px){
+    .cartas .card{
+        position:inherit;
+        width: 38%;
+    }
+}
+@media(max-width: 1329px){
+    .cartas{
+        display:flow-root;
+    }
+    
+    .cartas .card{
+        top: 15px;
+        height: 250px;
+        background: #fff;
+        width: 55%;
+        margin: 25px auto;
+    }
+}
 
 
 
